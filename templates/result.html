@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color:#f4f4f4;
+            text-align:center;
+            padding-top:100px;
+        }
+
+        .container{
+            background:white;
+            width:500px;
+            margin:auto;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+        }
+
+        h1{
+            color:#333;
+        }
+
+        .safe{
+            color:green;
+            font-size:28px;
+            font-weight:bold;
+        }
+
+        .phishing{
+            color:red;
+            font-size:28px;
+            font-weight:bold;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:20px;
+            padding:10px 20px;
+            background:#007bff;
+            color:white;
+            text-decoration:none;
+            border-radius:5px;
+        }
+
+        .btn:hover{
+            background:#0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Prediction Result</h1>
+
+    {% if prediction == "Legitimate Website" %}
+        <p class="safe">✅ Legitimate Website</p>
+    {% else %}
+        <p class="phishing">🚨 Phishing Website</p>
+    {% endif %}
+
+    <a href="/predict_single" class="btn">
+        Predict Again
+    </a>
+
+</div>
+
+</body>
+</html>

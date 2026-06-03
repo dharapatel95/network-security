@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Network Security Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        input {
+            padding: 8px;
+        }
+
+        button {
+            padding: 10px;
+            background: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .result {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Phishing Website Detection</h1>
+
+<form action="/predict_single" method="post">
+
+    <input type="number" name="having_IP_Address" placeholder="having_IP_Address">
+    <input type="number" name="URL_Length" placeholder="URL_Length">
+
+    <input type="number" name="Shortining_Service" placeholder="Shortining_Service">
+    <input type="number" name="having_At_Symbol" placeholder="having_At_Symbol">
+
+    <input type="number" name="double_slash_redirecting" placeholder="double_slash_redirecting">
+    <input type="number" name="Prefix_Suffix" placeholder="Prefix_Suffix">
+
+    <input type="number" name="having_Sub_Domain" placeholder="having_Sub_Domain">
+    <input type="number" name="SSLfinal_State" placeholder="SSLfinal_State">
+
+    <input type="number" name="Domain_registeration_length" placeholder="Domain_registeration_length">
+    <input type="number" name="Favicon" placeholder="Favicon">
+
+    <input type="number" name="port" placeholder="port">
+    <input type="number" name="HTTPS_token" placeholder="HTTPS_token">
+
+    <input type="number" name="Request_URL" placeholder="Request_URL">
+    <input type="number" name="URL_of_Anchor" placeholder="URL_of_Anchor">
+
+    <input type="number" name="Links_in_tags" placeholder="Links_in_tags">
+    <input type="number" name="SFH" placeholder="SFH">
+
+    <input type="number" name="Submitting_to_email" placeholder="Submitting_to_email">
+    <input type="number" name="Abnormal_URL" placeholder="Abnormal_URL">
+
+    <input type="number" name="Redirect" placeholder="Redirect">
+    <input type="number" name="on_mouseover" placeholder="on_mouseover">
+
+    <input type="number" name="RightClick" placeholder="RightClick">
+    <input type="number" name="popUpWidnow" placeholder="popUpWidnow">
+
+    <input type="number" name="Iframe" placeholder="Iframe">
+    <input type="number" name="age_of_domain" placeholder="age_of_domain">
+
+    <input type="number" name="DNSRecord" placeholder="DNSRecord">
+    <input type="number" name="web_traffic" placeholder="web_traffic">
+
+    <input type="number" name="Page_Rank" placeholder="Page_Rank">
+    <input type="number" name="Google_Index" placeholder="Google_Index">
+
+    <input type="number" name="Links_pointing_to_page" placeholder="Links_pointing_to_page">
+    <input type="number" name="Statistical_report" placeholder="Statistical_report">
+
+    <div class="btn-container" style="grid-column: span 2;">
+        <button type="submit">Predict</button>
+    </div>
+
+</form>
+
+</body>
+</html>
