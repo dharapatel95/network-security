@@ -29,8 +29,7 @@ Saved Model Artifacts
      │
      ▼
 Flask Prediction Application
-
-
+```
 ## Installation
 git clone https://github.com/dharapatel95/network-security.git
 cd network-security
@@ -47,3 +46,5 @@ python main.py
 
 ## Run Flask App
 python app.py
+
+
