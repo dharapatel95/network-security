@@ -6,17 +6,6 @@ An end-to-end machine learning project for detecting malicious network activity 
 
 Network attacks can disrupt systems, expose sensitive information, and affect business operations. This project uses machine learning to analyze network traffic attributes and classify whether a connection is normal or potentially malicious.
 
-## Key Highlights
-
-- End-to-end machine learning pipeline
-- Data ingestion from MongoDB
-- Data validation using a defined schema
-- Data transformation and feature preprocessing
-- Model training and evaluation
-- Prediction pipeline for new network data
-- Flask-based web interface
-- Logging and exception handling
-- Modular project structure using OOP principles
 
 ## Architecture
 
@@ -40,3 +29,21 @@ Saved Model Artifacts
      │
      ▼
 Flask Prediction Application
+
+
+## Installation
+git clone https://github.com/dharapatel95/network-security.git
+cd network-security
+py -3.11 -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+
+## MongoDB Setup
+Create a .env file and add:
+MONGODB_URL_KEY=your_mongodb_connection_string
+
+## Run Training Pipeline
+python main.py
+
+## Run Flask App
+python app.py
